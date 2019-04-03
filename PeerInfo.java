@@ -15,27 +15,14 @@ public class PeerInfo {
         fileStatus = fs;
     }
 
-   private void getInfo() {
-        boolean a = true;
-        if (!a) {
-        System.out.println("Get some info");
-        }
-    }
-
-    private void outputInfo() {
-        boolean a = true;
-        if (!a) {
-        System.out.println("Put some info");
-        }
-    }
 
     public int getPeerID() {
-        getInfo();
+       
         return peerID;
     }
 
     public void setPeerID(int peerID) {
-        outputInfo();
+        
         this.peerID = peerID;
     }
 
