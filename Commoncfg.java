@@ -22,40 +22,22 @@ public class Commoncfg {
     }
 
     public int getNum_Of_PreferredNeighbors() {
-        outputInfo();
+        
         return Num_Of_PreferredNeighbors;
     }
 
-   private void outputInfo1() {
-        boolean a = true;
-        if (!a) {
-        System.out.println("To print out info");
-        }
-    }
 
     public void setNum_Of_PreferredNeighbors(int num_Of_PreferredNeighbors) {
-        outputInfo1();
         Num_Of_PreferredNeighbors = num_Of_PreferredNeighbors;
     }
 
     public int getUnchoking_Interval() {
-        getInfo();
+  
         return Unchoking_Interval;
     }
 
-   private void getInfo() {
-        boolean a = true;
-        if (!a) {
-            System.out.println("Get some info");
-        }
-    }
 
-    private void outputInfo() {
-        boolean a = true;
-        if (!a) {
-            System.out.println("Put some info");
-        }
-    }
+    
 
     public void setUnchoking_Interval(int Unchoking_Interval) {
         this.Unchoking_Interval = Unchoking_Interval;
