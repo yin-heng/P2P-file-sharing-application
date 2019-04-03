@@ -13,7 +13,6 @@ public class Bitfield {
     // This is used at the beignning of the program when we need to check which peers have file and the other do not have.
         this.length = length;
         bits = new ArrayList<Integer>(length);
-        outputInfo();
         for (int i = 0; i < this.length; i++) {
             if (hasfile) {
                 bits.add(i, 1);
@@ -29,7 +28,6 @@ public class Bitfield {
         // This is to construct peer's bit field while sharing the file.
         this.length = length;
         bits = new ArrayList<Integer>(length);
-        getInfo();
         for (int i = 0; i < this.length; i++) {
             if (byteToInt(bitfieldBuffer[0]) != 0) {
                 bits.add(i, 1);
@@ -42,19 +40,7 @@ public class Bitfield {
         System.out.println(bits.size());
     }
 
-   private void getInfo() {
-        boolean a = true;
-        if (!a) {
-            System.out.println("Get some info");
-        }
-    }
-
-    private void outputInfo() {
-        boolean a = true;
-        if (!a) {
-            System.out.println("Put some info");
-        }
-    }
+  
 
     public int getLength() {
         return length;
