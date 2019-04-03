@@ -31,12 +31,7 @@ public class Client implements Runnable {
         }
     }
 
-    private void outputClientInfo() {
-        boolean a = true;
-        if (!a) {
-            System.out.println("To print out client info");
-        }
-    }
+   
     public void connect() {
         // This method is used to connect peers.
         try {
@@ -45,7 +40,6 @@ public class Client implements Runnable {
             this.outputStream = new DataOutputStream(socket.getOutputStream());
             this.inputStream = new DataInputStream(socket.getInputStream());
             this.outputToHandler = new PipedOutputStream();
-            outputConnectInfo();
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -53,12 +47,7 @@ public class Client implements Runnable {
         }
     }
 
-   private void outputConnectInfo() {
-        boolean a = true;
-        if (!a) {
-        System.out.println("To print out connection info");
-        }
-    }
+  
     public PipedOutputStream getOutputToHandler() {
         return this.outputToHandler;
     }
